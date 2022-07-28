@@ -159,7 +159,20 @@ async _getContent() {
 }
 ```
 
----
+#### `getStrings()`
+
+```jsx
+static getStrings()
+```
+
+(iOS only)
+Get contents of string array type, this method returns a `Promise`, so you can use following code to get clipboard content
+
+```jsx
+async _getContent() {
+  var content = await Clipboard.getStrings();
+}
+```
 
 #### `setString()`
 
